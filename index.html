@@ -45,22 +45,96 @@
       -webkit-align-items: center;
       align-items: center;
     }
+    @keyframes fadeIn{
+      0% { opacity: 0; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+    .desc{
+      width: 50%;
+      word-wrap: break-word;
+      margin-left: 20px;
+      margin-bottom: 60px;
+      font-weight: bold;
+      color: #3399ff;
+      animation: 1s fadeIn;
+      text-align: left;
+    }
+    .fir-page{
+      background: #000;
+      color: #FFF;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .sec-page{
+      background: url("./img/paris.jpg") no-repeat;
+      background-position-x: 50%;
+      background-size: cover;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .thi-page{
+      background: url("./img/brazi.jpg") no-repeat;
+      background-position-x: 50%;
+      background-size: cover;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .for-page{
+      background: url("./img/japan.jpg") no-repeat;
+      background-position-x: 50%;
+      background-size: cover;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .fif-page{
+      background: url("./img/us.jpg") no-repeat;
+      background-position-x: 50%;
+      background-size: cover;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .six-page{
+      background: url("./img/my.jpg") no-repeat;
+      background-position-x: 50%;
+      background-size: cover;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
   </style>
 </head>
 <body>
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
+      <div class="swiper-slide fir-page">
+       <p>Merry Christmas</p>
+       <p>Show you beautiful Christmas trees</p>
+      </div>
+      <div class="swiper-slide sec-page">
+        <div class="desc">法国巴黎，老佛爷百货公司镶嵌施华洛世奇水晶的圣诞树。</div>
+      </div>
+      <div class="swiper-slide thi-page">
+          <div class="desc">巴西里约热内卢，当地举行罗德里戈—德弗雷塔斯湖湖面上的巨型圣诞树亮灯仪式。</div>
+        </div>
+        <div class="swiper-slide for-page">
+            <div class="desc">日本大阪，一棵高36米装饰有364200盏灯的圣诞树在环球影城内试亮灯。</div>
+        </div>
+        <div class="swiper-slide fif-page">
+            <div class="desc">美国国会圣诞树亮灯。</div>
+        </div>
+      <div class="swiper-slide six-page">
+          <div class="desc">哈哈哈</div>
+      </div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
